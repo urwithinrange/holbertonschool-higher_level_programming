@@ -5,6 +5,7 @@ temp = number
 if number < 0:
     temp = number * -1
     num = temp % 10
+    num = -num
 else:
     num = number % 10
 if num > 5:
