@@ -9,6 +9,6 @@ def print_matrix_integer(matrix=[[]]):
             for i in col:
                 count += 1
                 if count == arrlen:
-                    print('{}'.format(i), end="\n")
+                    print('{:d}'.format(i), end="\n")
                 else:
-                    print('{} '.format(i), end="")
+                    print('{:d} '.format(i), end="")
