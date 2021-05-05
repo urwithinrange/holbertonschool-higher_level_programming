@@ -23,6 +23,7 @@ class Square:
             The position must be a tuple of 2 positive integers
 
         """
+
         self.__size = size
         if not isinstance(position, tuple) and len(position) == 2\
                 and isinstance(position[0], int) and position[0] >= 0 and\
