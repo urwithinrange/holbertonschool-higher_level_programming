@@ -1,17 +1,9 @@
 #!/usr/bin/python3
-"""Class Square
-
-Defines a square for the puropses of creating a matrix
-
-"""
+"""Class Square = Defines a square for the puropses of creating a matrix"""
 
 
 class Square:
-    """Create a 2d square
-
-    Modules used to manipulate a square
-
-    """
+    """Create a 2d square,Modules used to manipulate a square"""
 
     def __init__(self, size=0, position=(0, 0)):
         """Size of the square is determined
