@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Class Square
+"""Class Square.
 
 define a square
 
@@ -17,7 +17,11 @@ class Square:
         """Size of the square is determined
 
         All the variables are checked for accuraccy
-	
+        Raise
+	-----
+        TypeError
+            The position must be a tuple of 2 positive integers
+
         """
         self.__size = size
         if not isinstance(position, tuple) and len(position) == 2\
