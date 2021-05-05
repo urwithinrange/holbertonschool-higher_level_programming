@@ -6,16 +6,7 @@ class Square:
     """Create a 2d square,Modules used to manipulate a square"""
 
     def __init__(self, size=0, position=(0, 0)):
-        """Size of the square is determined
-
-        All the variables are checked for accuraccy
-        Raise
-        -----
-        TypeError
-            The position must be a tuple of 2 positive integers
-
-        """
-
+        """Size of the square is determined"""
         self.__size = size
         if not isinstance(position, tuple) and len(position) == 2\
                 and isinstance(position[0], int) and position[0] >= 0 and\
