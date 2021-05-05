@@ -5,8 +5,12 @@ define a square
 
 
 class Square:
-    """ Form a 2d square """
+    """Create a 2d square
+    Modules used to manipulate a square
+    """
+
     def __init__(self, size=0, position=(0, 0)):
+        """All the variable are checked for accuraccy"""
         self.__size = size
         if not isinstance(position, tuple) and len(position) == 2\
                 and isinstance(position[0], int) and position[0] >= 0 and\
@@ -16,6 +20,7 @@ class Square:
             self.__position = position
 
     def area(self):
+        """Identifies the area of square"""
         return self.__size * self.__size
 
     @property
@@ -31,6 +36,7 @@ class Square:
         self.__size = value
 
     def my_print(self):
+        """Where all the printing happens"""
         if self.__size == 0:
             print()
             return
