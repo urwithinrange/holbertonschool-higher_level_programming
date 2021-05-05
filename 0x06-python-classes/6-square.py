@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""Class Square.
+"""Class Square
 
-define a square
+Defines a square for the puropses of creating a matrix
 
 """
 
@@ -18,7 +18,7 @@ class Square:
 
         All the variables are checked for accuraccy
         Raise
-	-----
+        -----
         TypeError
             The position must be a tuple of 2 positive integers
 
