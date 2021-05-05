@@ -8,7 +8,12 @@ class Square:
     """ Form a 2d square """
     def __init__(self, size=0, position=(0, 0)):
         self.__size = size
-        self.__position = position
+        if not isinstance(position, tuple) and len(position) == 2\
+                and isinstance(position[0], int) and position[0] >= 0 and\
+                and isinstance(position[1], int) and position[1] >= 0:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        else:
+            self.__position = position
 
     def area(self):
         return self.__size * self.__size
