@@ -25,10 +25,12 @@ class Square:
 
     @property
     def size(self):
+        """Getter for size"""
         return self.__size
 
     @size.setter
     def size(self, value):
+        """Setter for size"""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         if value < 0:
@@ -47,10 +49,12 @@ class Square:
 
     @property
     def position(self):
+        """Getter for position"""
         return self.__position
 
     @position.setter
     def position(self, value):
+        """Setter for position"""
         if type(value) is tuple and len(value) == 2 and\
                 value[0] >= 0 and value[1] >= 0 and type(value[0]) is int\
                 and type(value[1]) is int:
