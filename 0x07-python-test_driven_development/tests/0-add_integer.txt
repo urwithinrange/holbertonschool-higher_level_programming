@@ -36,3 +36,5 @@ ValueError: cannot convert float NaN to integer
 >>> add_integer(a,  0)
 Traceback (most recent call last):
 NameError: name 'a' is not defined
+>>> add_integer(0)
+98
