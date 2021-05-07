@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """add_integer adds integers"""
+
+
 def add_integer(a, b=98):
     """add_integer adds a + b"""
     if a is None or not isinstance(a, (int, float)):
