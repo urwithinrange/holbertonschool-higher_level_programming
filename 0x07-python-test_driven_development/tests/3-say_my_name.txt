@@ -17,6 +17,3 @@ My name is  Clem
 >>> say_my_name(None, "Clem")
 Traceback (most recent call last):
 TypeError: first_name must be a string
-
->>> say_my_name("D", )
-My name is D
