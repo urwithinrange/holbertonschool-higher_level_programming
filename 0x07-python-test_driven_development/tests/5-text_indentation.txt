@@ -1,5 +1,20 @@
 >>> text_indentation = __import__('5-text_indentation').text_indentation
 
+>>> text_indentation("Holberton. School? How are you: John")
+Holberton.
+<BLANKLINE>
+School?
+<BLANKLINE>
+How are you:
+<BLANKLINE>
+John
+
+>>> text_indentation("Holberton School")
+Holberton School
+>>> text_indentation("Holberton.School")
+Holberton.
+<BLANKLINE>
+School
 >>> text_indentation(":.?")
 :
 <BLANKLINE>
