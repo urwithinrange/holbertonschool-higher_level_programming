@@ -15,6 +15,16 @@ class Rectangle:
         self.width = width
         self.height = height
 
+    def __str__(self):
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        else:
+            matrix_out = "#" * self.__width
+            matrix_list = []
+            for i in range(self.__height):
+                matrix_list.append(matrix_out)
+            return "\n".join(matrix_list)
+
     @property
     def width(self):
         return self.__width
@@ -46,17 +56,3 @@ class Rectangle:
         if self.__height == 0 or self.__width == 0:
             return 0
         return (self.__height + self.__width) * 2
-
-    def __str__(self):
-        if self.__width == 0 or self.__height == 0:
-            return ""
-        else:
-            matrix_out = "#" * self.__width
-            matrix_list = []
-            for i in range(self.__height):
-                matrix_list.append(matrix_out)
-            return "\n".join(matrix_list)
-
-    def __repr__(self):
-        return "{}({}, {})".format((type(self).__name__), self.__width,
-                                   self.__height)
