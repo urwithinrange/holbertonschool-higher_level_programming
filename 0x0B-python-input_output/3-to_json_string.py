@@ -1,4 +1,4 @@
-#!/usr/bun/python3
+#!/usr/bin/python3
 import json
 """to_json_string is a function using JSON"""
 
