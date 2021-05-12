@@ -1,28 +1,35 @@
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
->>> BaseGeometry.integer_validator("len", 10)
+>>> BG = BaseGeometry()
 
->>> BaseGeometry.integer_validator("len", 0)
+>>> BG.integer_validator("len", 10)
+
+>>> BG.integer_validator("len", 0)
 Traceback (most recent call last):
 ...
-ValueError: idk must be greater than 0
+ValueError: len must be greater than 0
 
->>> BaseGeometry.integer_validator("len", 1, 1)
+>>> BG.integer_validator("len", 1, 1)
 Traceback (most recent call last):
+...
 TypeError: integer_validator() takes 3 positional arguments but 4 were given
 
->>> BaseGeometry.integer_validator("len", -32)
+>>> BG.integer_validator("len", -32)
 Traceback (most recent call last):
-ValueError: Time must be greater than 0
+...
+ValueError: len must be greater than 0
 
->>> BaseGeometry.integer_validator("len", 4.2)
+>>> BG.integer_validator("len", 4.2)
 Traceback (most recent call last):
-TypeError: Life must be an integer
+...
+TypeError: len must be an integer
 
->>> BaseGeometry.integer_validator("len", "len")
+>>> BG.integer_validator("len", "len")
 Traceback (most recent call last):
-TypeError: cat must be an integer
+...
+TypeError: len must be an integer
 
->>> BaseGeometry.integer_validator("len")
+>>> BG.integer_validator("len")
 Traceback (most recent call last):
+...
 TypeError: integer_validator() missing 1 required positional argument: 'value'
