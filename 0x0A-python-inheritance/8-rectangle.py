@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 """Class Rectangle will take deminsions"""
 
 class Rectangle(BaseGeometry):
