@@ -3,4 +3,5 @@
 
 
 class BaseGeometry:
+    """BaseGeometry does something soon"""
     pass
