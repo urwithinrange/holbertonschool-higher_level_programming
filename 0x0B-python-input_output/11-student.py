@@ -16,6 +16,7 @@ class Student:
         else:
             return dict((key, value) for (key, value) in self.__dict__.items()
                         if key in attrs)
+
     def reload_from_json(self, json):
         for key, value in json.items():
             self.__dict__[key] = value
