@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Class Base will be the base of all other classes in 0x0C"""
 import json
+import os
 
 
 class Base:
