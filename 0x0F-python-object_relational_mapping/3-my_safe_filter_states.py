@@ -15,5 +15,3 @@ if __name__ == "__main__":
     data = cursor.fetchall()
     for list in data:
         print("{}".format(list))
-cursor.close()
-db.close()
