@@ -11,7 +11,7 @@ if __name__ == "__main__":
     db = MySQLdb.connect("localhost", argv[1], argv[2], argv[3])
     cursor = db.cursor()
     sql = "SELECT cities.id, cities.name, states.name\
-           FROM citiesINNER JOIN states\
+           FROM cities INNER JOIN states\
            ON cities.state_id = states.id"
     cursor.execute(sql)
     data = cursor.fetchall()
