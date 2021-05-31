@@ -5,6 +5,7 @@ if __name__ == "__main__":
     from sys import argv
     import MySQLdb
 
+    # .format
     db = MySQLdb.connect("localhost", argv[1], argv[2], argv[3])
     cursor = db.cursor()
     sql = "SELECT * FROM states WHERE name = '"+argv[4]+"'"
@@ -12,3 +13,4 @@ if __name__ == "__main__":
     data = cursor.fetchall()
     for list in data:
         print(list)
+db.close()
