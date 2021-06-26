@@ -32,6 +32,5 @@ if __name__ == "__main__":
     for obj in session.query(State):
         if obj.name == argv[4]:
             print(obj.id)
-            count += 1
     if count == 0:
         print("Not found")
